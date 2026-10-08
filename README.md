@@ -14,7 +14,7 @@ Building backend applications, distributed workflows, and business-driven servic
   <a href="mailto:sourabhark.2308@gmail.com"><img src="https://img.shields.io/badge/Email-sourabhark.2308@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
-<sub>📍🇮🇳 India &nbsp;•&nbsp; 🎯 Java Backend Developer / Software Engineer &nbsp;•&nbsp; ⚡ Available immediately</sub>
+<sub>📍India &nbsp;•&nbsp; 🎯 Java Backend Developer / Software Engineer &nbsp;•&nbsp; ⚡ Available immediately</sub>
 
 </div>
 
