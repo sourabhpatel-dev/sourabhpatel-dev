@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="SourHub architecture diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="12" fill="url(#bg)"/>
+  <text x="600" y="40" text-anchor="middle" font-family="monospace" font-size="14" fill="#8b949e">SOURHUB — HIGH-LEVEL ARCHITECTURE</text>
+
+  <g font-family="monospace" font-size="12" text-anchor="middle">
+    <rect x="500" y="60" width="200" height="38" rx="8" fill="#161b22" stroke="#5392f6"/>
+    <text x="600" y="84" fill="#5392f6">Client</text>
+
+    <line x1="600" y1="98" x2="600" y2="124" stroke="#30363d"/>
+    <path d="M600 126 l-4 -7 h8 z" fill="#30363d"/>
+
+    <rect x="440" y="130" width="320" height="38" rx="8" fill="#161b22" stroke="#f89820"/>
+    <text x="600" y="154" fill="#f89820">API Gateway (JWT, rate limiting)</text>
+
+    <line x1="600" y1="168" x2="600" y2="194" stroke="#30363d"/>
+    <path d="M600 196 l-4 -7 h8 z" fill="#30363d"/>
+
+    <g transform="translate(0,0)">
+      <rect x="60" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="135" y="223" fill="#6cc24a">Auth</text>
+      <rect x="225" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="300" y="223" fill="#6cc24a">User</text>
+      <rect x="390" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="465" y="223" fill="#6cc24a">Product</text>
+      <rect x="555" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="630" y="223" fill="#6cc24a">Order</text>
+      <rect x="720" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="795" y="223" fill="#6cc24a">Payment</text>
+      <rect x="885" y="200" width="150" height="36" rx="8" fill="#161b22" stroke="#6cc24a"/>
+      <text x="960" y="223" fill="#6cc24a">Review</text>
+    </g>
+
+    <line x1="600" y1="236" x2="600" y2="262" stroke="#30363d"/>
+    <path d="M600 264 l-4 -7 h8 z" fill="#30363d"/>
+
+    <rect x="440" y="268" width="320" height="38" rx="8" fill="#161b22" stroke="#a371f7"/>
+    <text x="600" y="292" fill="#a371f7">Kafka — Outbox, retries, DLQ, idempotent consumers</text>
+
+    <line x1="600" y1="306" x2="600" y2="332" stroke="#30363d"/>
+    <path d="M600 334 l-4 -7 h8 z" fill="#30363d"/>
+
+    <rect x="110" y="338" width="290" height="40" rx="8" fill="#161b22" stroke="#e3b341"/>
+    <text x="255" y="363" fill="#e3b341">PostgreSQL (per-service DBs)</text>
+    <rect x="455" y="338" width="290" height="40" rx="8" fill="#161b22" stroke="#e3b341"/>
+    <text x="600" y="363" fill="#e3b341">Redis (cache, rate limiting)</text>
+    <rect x="800" y="338" width="290" height="40" rx="8" fill="#161b22" stroke="#e3b341"/>
+    <text x="945" y="363" fill="#e3b341">Elasticsearch (product search)</text>
+
+    <text x="600" y="412" fill="#6e7681" font-size="11">Discovery: Eureka · Config: Spring Cloud Config · Observability: Actuator, Micrometer, Zipkin</text>
+  </g>
+</svg>
