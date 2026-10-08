@@ -131,7 +131,7 @@ Java Backend Developer with **4 years of professional software development exper
 
 **Freelance Java Backend Developer** · Dec 2025 – Sep 2026
 
-*Confidential client — subscription usage and overage management platform for AI products.*
+*Vertical Solutions — subscription usage and overage management platform for AI products.*
 
 - Built the complete backend using Java, Spring Boot, Microservices, and REST APIs: AI token usage tracking, monthly subscription limits, overage management
 - Developed a Kafka-based ingestion pipeline consuming daily raw AI usage events, persisted in Azure Cosmos DB
